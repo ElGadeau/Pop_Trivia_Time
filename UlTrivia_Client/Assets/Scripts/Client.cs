@@ -78,6 +78,11 @@ public class Client : MonoBehaviour
 
     public void Connect()
     {
+        Shutdown();
+        
+        if (m_isStarted)
+            return;
+            
         m_serverIp = inputText.text;
         Init();
     }
