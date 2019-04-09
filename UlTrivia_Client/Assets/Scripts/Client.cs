@@ -2,27 +2,31 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class Client : MonoBehaviour
 {
     private const int    MAX_USER  = 4;
     private const int    PORT      = 26000;
     private const int    WEB_PORT  = 26001;
-    private const string SERVER_IP = "10.5.4.54";
     private const int    BYTE_SIZE = 1024;
 
     private int m_hostId;
     int         m_connectionId; // Which user is sending ?
-
+    
     private bool m_isStarted;
 
     private byte m_reliableChannel;
     private byte m_error;
 
+    private string m_serverIp;
+    
+    public Text inputText;
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        Init();
+//        Init();
     }
 
     private void Update()
@@ -72,6 +76,12 @@ public class Client : MonoBehaviour
         }
     }
 
+    public void Connect()
+    {
+        m_serverIp = inputText.text;
+        Init();
+    }
+    
     public void Init()
     {
         // Needs to be the same on the server !
@@ -85,10 +95,10 @@ public class Client : MonoBehaviour
         // Client only code
         m_hostId = NetworkTransport.AddHost(topo, 0);
 
-        NetworkTransport.Connect(m_hostId, SERVER_IP, PORT, 0, out m_error);
+        NetworkTransport.Connect(m_hostId, m_serverIp, PORT, 0, out m_error);
         Debug.Log("Connection from standalone");
 
-        Debug.Log(string.Format("Attempting to connect on {0}...", SERVER_IP));
+        Debug.Log(string.Format("Attempting to connect on {0}...", m_serverIp));
         m_isStarted = true;
     }
 

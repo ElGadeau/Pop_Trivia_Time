@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/LilianTest/Menu.unity
+    guid: 9a2dd6ccb395390408b165186abd118a
+  - enabled: 1
+    path: Assets/Scenes/LilianTest/Host.unity
+    guid: ce3e72897cac59f4b96b255dbbdfd82e
+  - enabled: 1
+    path: Assets/Scenes/LilianTest/Client.unity
+    guid: d4cdf02450c4ae64099a808d89956ccf
   m_configObjects: {}
