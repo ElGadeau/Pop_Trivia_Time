@@ -8,6 +8,12 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Client.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="Server.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="Net_CreateAccount.cs" t="Include" />
+            <e p="NetMsg.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">

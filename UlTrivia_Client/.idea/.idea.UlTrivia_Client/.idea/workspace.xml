@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d96238-393d-421d-9a8c-c73d6696a0bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UlTrivia_Server/Assets/Scenes/MainScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UlTrivia_Server/Assets/Scenes/MainScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UlTrivia_Client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UlTrivia_Client/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UlTrivia_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UlTrivia_Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UlTrivia_Server/.idea/.idea.UlTrivia_Server/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UlTrivia_Server/.idea/.idea.UlTrivia_Server/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UlTrivia_Server/.idea/.idea.UlTrivia_Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UlTrivia_Server/.idea/.idea.UlTrivia_Server/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +15,55 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Client.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="192">
+              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
               <folding>
-                <marker date="1554759870226" expanded="false" signature="6:48" ph="..." />
-                <marker date="1554759870226" expanded="true" signature="85:1384" ph="{...}" />
-                <marker date="1554759870226" expanded="true" signature="388:455" ph="{...}" />
-                <marker date="1554759870226" expanded="true" signature="479:1276" ph="{...}" />
-                <marker date="1554759870226" expanded="true" signature="1304:1382" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="6:141" ph="..." />
+                <marker date="1554839694784" expanded="true" signature="178:4034" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="617:686" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="713:754" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="791:2089" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="1246:2083" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="2116:2181" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="2209:2800" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="2828:2906" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="2908:3240" ph="OnData" />
+                <marker date="1554839694784" expanded="true" signature="3006:3229" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="3097:3223" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="3242:3791" ph="Send" />
+                <marker date="1554839694784" expanded="true" signature="3359:3780" ph="{...}" />
+                <marker date="1554839694784" expanded="true" signature="3835:4032" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shared/Net_CreateAccount.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding>
+                <marker date="1554826510747" expanded="true" signature="61:266" ph="{...}" />
+                <marker date="1554826510747" expanded="true" signature="94:140" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shared/NetMsg.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding>
+                <marker date="1554826654994" expanded="true" signature="25:101" ph="{...}" />
+                <marker date="1554826654994" expanded="true" signature="152:251" ph="{...}" />
+                <marker date="1554826654994" expanded="true" signature="212:249" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -38,10 +76,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Client.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shared/Net_CreateAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shared/NetMsg.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shared/Net_CreateAccount.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shared/NetMsg.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Client.cs" />
       </list>
     </option>
@@ -57,9 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -72,14 +113,21 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Shared" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -88,6 +136,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -127,11 +176,12 @@
       <updated>1554757723104</updated>
       <workItem from="1554757724512" duration="36000" />
       <workItem from="1554758028628" duration="1502000" />
+      <workItem from="1554821035125" duration="12931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1538000" />
+    <option name="totallyTimeSpent" value="14469000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -144,9 +194,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19474836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19912472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -192,16 +241,49 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shared/NetMsg.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <marker date="1554826654994" expanded="true" signature="25:101" ph="{...}" />
+            <marker date="1554826654994" expanded="true" signature="152:251" ph="{...}" />
+            <marker date="1554826654994" expanded="true" signature="212:249" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shared/Net_CreateAccount.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <marker date="1554826510747" expanded="true" signature="61:266" ph="{...}" />
+            <marker date="1554826510747" expanded="true" signature="94:140" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Client.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        <state relative-caret-position="192">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding>
-            <marker date="1554759870226" expanded="false" signature="6:48" ph="..." />
-            <marker date="1554759870226" expanded="true" signature="85:1384" ph="{...}" />
-            <marker date="1554759870226" expanded="true" signature="388:455" ph="{...}" />
-            <marker date="1554759870226" expanded="true" signature="479:1276" ph="{...}" />
-            <marker date="1554759870226" expanded="true" signature="1304:1382" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="6:141" ph="..." />
+            <marker date="1554839694784" expanded="true" signature="178:4034" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="617:686" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="713:754" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="791:2089" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="1246:2083" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="2116:2181" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="2209:2800" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="2828:2906" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="2908:3240" ph="OnData" />
+            <marker date="1554839694784" expanded="true" signature="3006:3229" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="3097:3223" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="3242:3791" ph="Send" />
+            <marker date="1554839694784" expanded="true" signature="3359:3780" ph="{...}" />
+            <marker date="1554839694784" expanded="true" signature="3835:4032" ph="{...}" />
           </folding>
         </state>
       </provider>
