@@ -64,7 +64,7 @@ public class Server : MonoBehaviour
 
 
                 OnData(connectionId, channelId, recHostId, msg);
-                
+
                 Debug.Log(recBuffer[0] + "Data");
                 break;
 
@@ -76,7 +76,22 @@ public class Server : MonoBehaviour
 #region OnData
     private void OnData(int connectionId, int channelId, int recHostId, NetMsg msg)
     {
-        Debug.Log("Received a message of type");
+        //Debug.Log("Received a message of type"  + msg.OP);
+        switch (msg.OP)
+        {
+            case NetOP.None:
+                Debug.Log("Unhandled NetOP request");
+                break;
+            
+            case NetOP.CreateAccount:
+                CreateAccount(connectionId, channelId, recHostId, (Net_CreateAccount) msg);
+                break;
+        }
+    }
+
+    private void CreateAccount(int connectionId, int channelId, int recHostId, Net_CreateAccount ca)
+    {
+        Debug.Log(string.Format("{0},{1}, {2}", ca.Username, ca.Password, ca.Email));
     }
 #endregion
     
@@ -103,4 +118,22 @@ public class Server : MonoBehaviour
         m_isStarted = false;
         NetworkTransport.Shutdown();
     }
+    
+#region Send
+    //every class depending on NetMsg will work here as parameter
+    public void SendClient(int p_connectionId, NetMsg msg)
+    {
+        // Sending buffer and receive buffer need to hold same size !
+        byte[] buffer = new byte[BYTE_SIZE];
+
+        BinaryFormatter formatter = new BinaryFormatter();
+        MemoryStream    ms        = new MemoryStream(buffer);
+        formatter.Serialize(ms, msg);
+        
+            NetworkTransport.Send(m_hostId, p_connectionId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
+        
+                
+            
+    }
+#endregion
 }

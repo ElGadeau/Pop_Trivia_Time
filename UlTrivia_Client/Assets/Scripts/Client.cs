@@ -8,7 +8,7 @@ public class Client : MonoBehaviour
     private const int    MAX_USER  = 4;
     private const int    PORT      = 26000;
     private const int    WEB_PORT  = 26001;
-    private const string SERVER_IP = "10.5.4.53";
+    private const string SERVER_IP = "10.5.4.54";
     private const int    BYTE_SIZE = 1024;
 
     private int m_hostId;
@@ -54,11 +54,16 @@ public class Client : MonoBehaviour
                 break;
 
             case NetworkEventType.DisconnectEvent:
-                Debug.Log("Client disconnected from the server");
+                Debug.Log("Connection Lost");
                 break;
 
             case NetworkEventType.DataEvent:
-                Debug.Log("Data");
+
+                BinaryFormatter formatter = new BinaryFormatter();
+                MemoryStream    ms        = new MemoryStream(recBuffer);
+                NetMsg          msg       = (NetMsg) formatter.Deserialize(ms);
+
+                OnData(m_connectionId, channelId, recHostId, msg);
                 break;
 
             case NetworkEventType.BroadcastEvent:
@@ -93,6 +98,19 @@ public class Client : MonoBehaviour
         NetworkTransport.Shutdown();
     }
 
+#region OnData
+    private void OnData(int connectionId, int channelId, int recHostId, NetMsg msg)
+    {
+        //Debug.Log("Received a message of type"  + msg.OP);
+        switch (msg.OP)
+        {
+            case NetOP.None:
+                Debug.Log("Unhandled NetOP request");
+                break;
+        }
+    }
+#endregion
+
 #region Send
     //every class depending on NetMsg will work here as parameter
     public void SendServer(NetMsg msg)
@@ -101,10 +119,21 @@ public class Client : MonoBehaviour
         byte[] buffer = new byte[BYTE_SIZE];
 
         BinaryFormatter formatter = new BinaryFormatter();
-        MemoryStream ms = new MemoryStream(buffer);
+        MemoryStream    ms        = new MemoryStream(buffer);
         formatter.Serialize(ms, msg);
-        
+
         NetworkTransport.Send(m_hostId, m_connectionId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
     }
 #endregion
+
+    public void TESTFUNCTIONCREATACCOINT()
+    {
+        Net_CreateAccount ca =new Net_CreateAccount();
+
+        ca.Username = "Yolo";
+        ca.Password = "yes";
+        ca.Email = "yyyy@ggggg.com";
+        
+        SendServer(ca);
+    }
 }
