@@ -525,6 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7737004197c37438dc1da8acff415c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputText: {fileID: 755977626}
 --- !u!4 &664579424
 Transform:
   m_ObjectHideFlags: 0
@@ -829,7 +830,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 664579423}
-        m_MethodName: SendServer
+        m_MethodName: Connect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
