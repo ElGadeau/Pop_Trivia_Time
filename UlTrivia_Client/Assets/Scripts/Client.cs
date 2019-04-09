@@ -118,6 +118,7 @@ public class Client : MonoBehaviour
         // Sending buffer and receive buffer need to hold same size !
         byte[] buffer = new byte[BYTE_SIZE];
 
+        buffer[0] = 255;
         BinaryFormatter formatter = new BinaryFormatter();
         MemoryStream    ms        = new MemoryStream(buffer);
         formatter.Serialize(ms, msg);
