@@ -30,9 +30,4 @@ public class TestXML : MonoBehaviour
 
         qb.Save(Path.Combine(Application.dataPath, "questions.xml"));
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }
