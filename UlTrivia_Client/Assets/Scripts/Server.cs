@@ -86,12 +86,21 @@ public class Server : MonoBehaviour
             case NetOP.CreateAccount:
                 CreateAccount(connectionId, channelId, recHostId, (Net_CreateAccount) msg);
                 break;
+            
+            case NetOP.SelectChara:
+                SelectCharacter(connectionId, channelId, recHostId, (Net_CharacterSelection) msg);
+                break;
         }
     }
 
     private void CreateAccount(int connectionId, int channelId, int recHostId, Net_CreateAccount ca)
     {
         Debug.Log(string.Format("{0},{1}, {2}", ca.Username, ca.Password, ca.Email));
+    }
+
+    private void SelectCharacter(int connectionId, int channelId, int recHostId, Net_CharacterSelection cs)
+    {
+        Debug.Log(string.Format("{0}, is selected by {1}", cs.Name, connectionId));
     }
 #endregion
     

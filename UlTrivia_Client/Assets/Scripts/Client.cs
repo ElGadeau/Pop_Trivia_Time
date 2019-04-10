@@ -2,6 +2,7 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Client : MonoBehaviour
@@ -15,6 +16,7 @@ public class Client : MonoBehaviour
     int         m_connectionId; // Which user is sending ?
     
     private bool m_isStarted;
+    private bool m_isConnected = false;
 
     private byte m_reliableChannel;
     private byte m_error;
@@ -54,10 +56,13 @@ public class Client : MonoBehaviour
                 break;
 
             case NetworkEventType.ConnectEvent:
+                m_isConnected = true;
+                SceneManager.LoadScene("ClientPlay");
                 Debug.Log("Successful connection to the server");
                 break;
 
             case NetworkEventType.DisconnectEvent:
+                m_isConnected = false;
                 Debug.Log("Connection Lost");
                 break;
 
