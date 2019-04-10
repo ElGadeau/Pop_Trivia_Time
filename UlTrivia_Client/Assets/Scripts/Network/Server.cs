@@ -14,7 +14,6 @@ public class Server : MonoBehaviour
     private byte m_error;
 
     private int m_hostId;
-    private int m_webHostId;
 
     private bool m_isStarted;
 
@@ -62,10 +61,7 @@ public class Server : MonoBehaviour
                 MemoryStream    ms        = new MemoryStream(recBuffer);
                 NetMsg          msg       = (NetMsg) formatter.Deserialize(ms);
 
-
                 OnData(connectionId, channelId, recHostId, msg);
-
-                Debug.Log(recBuffer[0] + "Data");
                 break;
 
             case NetworkEventType.BroadcastEvent:
@@ -87,7 +83,7 @@ public class Server : MonoBehaviour
             case NetOP.CreateAccount:
                 CreateAccount(connectionId, channelId, recHostId, (Net_CreateAccount) msg);
                 break;
-            
+
             case NetOP.SelectChara:
                 SelectCharacter(connectionId, channelId, recHostId, (Net_CharacterSelection) msg);
                 break;
@@ -117,7 +113,6 @@ public class Server : MonoBehaviour
 
         // Server only code
         m_hostId    = NetworkTransport.AddHost(topo, PORT, null);
-        m_webHostId = NetworkTransport.AddWebsocketHost(topo, WEB_PORT, null);
 
         Debug.Log(string.Format("Opening connection on port {0} and webport {1}", PORT, WEB_PORT));
         m_isStarted = true;
