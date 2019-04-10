@@ -98,6 +98,7 @@ public class Server : MonoBehaviour
     private void SelectCharacter(int connectionId, int channelId, int recHostId, Net_CharacterSelection cs)
     {
         Debug.Log(string.Format("{0}, is selected by {1}", cs.Name, connectionId));
+        SendClient(channelId, cs);
     }
 #endregion
 
