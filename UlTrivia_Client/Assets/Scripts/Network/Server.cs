@@ -73,6 +73,7 @@ public class Server : MonoBehaviour
                 break;
         }
     }
+
 #region OnData
     private void OnData(int connectionId, int channelId, int recHostId, NetMsg msg)
     {
@@ -82,7 +83,7 @@ public class Server : MonoBehaviour
             case NetOP.None:
                 Debug.Log("Unhandled NetOP request");
                 break;
-            
+
             case NetOP.CreateAccount:
                 CreateAccount(connectionId, channelId, recHostId, (Net_CreateAccount) msg);
                 break;
@@ -94,7 +95,7 @@ public class Server : MonoBehaviour
         Debug.Log(string.Format("{0},{1}, {2}", ca.Username, ca.Password, ca.Email));
     }
 #endregion
-    
+
     public void Init()
     {
         // Needs to be the same on the client !
@@ -118,7 +119,7 @@ public class Server : MonoBehaviour
         m_isStarted = false;
         NetworkTransport.Shutdown();
     }
-    
+
 #region Send
     //every class depending on NetMsg will work here as parameter
     public void SendClient(int p_connectionId, NetMsg msg)
@@ -129,11 +130,8 @@ public class Server : MonoBehaviour
         BinaryFormatter formatter = new BinaryFormatter();
         MemoryStream    ms        = new MemoryStream(buffer);
         formatter.Serialize(ms, msg);
-        
-            NetworkTransport.Send(m_hostId, p_connectionId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
-        
-                
-            
+
+        NetworkTransport.Send(m_hostId, p_connectionId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
     }
 #endregion
 }
