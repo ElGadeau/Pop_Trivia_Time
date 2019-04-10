@@ -98,7 +98,7 @@ public class Server : MonoBehaviour
     private void SelectCharacter(int connectionId, int channelId, int recHostId, Net_CharacterSelection cs)
     {
         Debug.Log(string.Format("{0}, is selected by {1}", cs.Name, connectionId));
-        SendClient(channelId, cs);
+        SendClients(cs);
     }
 #endregion
 
@@ -137,6 +137,17 @@ public class Server : MonoBehaviour
         formatter.Serialize(ms, msg);
 
         NetworkTransport.Send(m_hostId, p_connectionId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
+    }
+
+    public void SendClients(NetMsg msg)
+    {
+        byte[] buffer = new byte[BYTE_SIZE];
+
+        BinaryFormatter formatter = new BinaryFormatter();
+        MemoryStream    ms        = new MemoryStream(buffer);
+        formatter.Serialize(ms, msg);
+        
+        NetworkTransport.StartSendMulticast(m_hostId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
     }
 #endregion
 }
