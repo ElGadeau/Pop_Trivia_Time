@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Client : MonoBehaviour
 {
+    public static Client m_instance { private set; get; }
+    
     private const int    MAX_USER  = 4;
     private const int    PORT      = 26000;
     private const int    WEB_PORT  = 26001;
@@ -27,6 +29,11 @@ public class Client : MonoBehaviour
 
     void Start()
     {
+        if (m_instance == null)
+            m_instance = this;
+        else
+            Destroy(m_instance);
+        
         DontDestroyOnLoad(gameObject);
 //        Init();
     }
