@@ -57,7 +57,7 @@ public class Client : MonoBehaviour
 
             case NetworkEventType.ConnectEvent:
                 m_isConnected = true;
-                SceneManager.LoadScene("ClientPlay");
+                //SceneManager.LoadScene("ClientPlay");
                 Debug.Log("Successful connection to the server");
                 break;
 
