@@ -23,7 +23,7 @@ public class VoteButton : MonoBehaviour
     
     IEnumerator WaitChangeCanvas()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
