@@ -17,12 +17,12 @@ public class countDown : MonoBehaviour
     public IEnumerator StartCountdown()
     {
         currCountdownValue = countdownValue;
-        while (currCountdownValue >= 0)
+        while (currCountdownValue != 0)
         {
             m_text.text = Mathf.Round(currCountdownValue).ToString();
             yield return new WaitForSeconds(1.0f);
             currCountdownValue--;
         }
-        yield break;
+        Debug.Log("exiting");
     }
 }
