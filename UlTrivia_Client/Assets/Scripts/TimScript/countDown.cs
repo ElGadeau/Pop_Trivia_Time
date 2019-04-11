@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class countDown : MonoBehaviour {
@@ -21,7 +19,6 @@ public class countDown : MonoBehaviour {
         while (currCountdownValue >= 0)
         {
             text.text = Mathf.Round(currCountdownValue).ToString();
-            //Debug.Log("Countdown: " + currCountdownValue);
             yield return new WaitForSeconds(1.0f);
             currCountdownValue--;
         }
