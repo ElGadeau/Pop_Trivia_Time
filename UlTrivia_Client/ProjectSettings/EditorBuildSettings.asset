@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ClientScene/ClientPlay.unity
     guid: b2462e41cd8a9cf40aca15da64580e74
+  - enabled: 1
+    path: Assets/Scenes/HostScene/HostPlay.unity
+    guid: 2d3dd325f82d699498d5ba7f13bd16e0
   m_configObjects: {}
