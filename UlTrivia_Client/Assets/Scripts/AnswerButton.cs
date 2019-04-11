@@ -26,6 +26,5 @@ public class AnswerButton : MonoBehaviour
         yield return new WaitForSeconds(3.0f);
         m_activeCanvas.gameObject.SetActive(false);
         m_nextCanvas.gameObject.SetActive(true);
-        Debug.Log("iwehf");
     }
 }

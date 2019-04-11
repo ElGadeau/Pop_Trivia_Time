@@ -4,13 +4,14 @@ using TMPro;
 
 public class countDown : MonoBehaviour
 {
-    TextMeshProUGUI text;
+    TextMeshProUGUI m_text;
     public float    countdownValue = 30;
     public float    currCountdownValue { get; private set; }
 
-    public void Start()
+    public void Awake()
     {
-        text = GetComponent<TextMeshProUGUI>();
+        m_text = GetComponent<TextMeshProUGUI>();
+        m_text.text = countdownValue.ToString();
     }
 
     public IEnumerator StartCountdown()
@@ -18,7 +19,7 @@ public class countDown : MonoBehaviour
         currCountdownValue = countdownValue;
         while (currCountdownValue >= 0)
         {
-            text.text = Mathf.Round(currCountdownValue).ToString();
+            m_text.text = Mathf.Round(currCountdownValue).ToString();
             yield return new WaitForSeconds(1.0f);
             currCountdownValue--;
         }
