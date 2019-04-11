@@ -10,5 +10,5 @@ public class Net_SendVote : NetMsg
         OP = NetOP.SelectChara;
     }
     
-    public int Vote { set; get; }
+    public string Vote { set; get; }
 }
