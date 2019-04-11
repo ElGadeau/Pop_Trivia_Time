@@ -169,7 +169,7 @@
       <Question_Sound_Clip>Vol Poulet Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Vol Poulet Reponse</Fact_Sound_Clip>
       <Answers>
-        <Answer>2 jours (vol transatlantique, quelle heroïne)</Answer>
+        <Answer>2 jours (vol transatlantique, quelle heroine)</Answer>
         <Answer>genre 15 secondes</Answer>
         <Answer>trois heures</Answer>
       </Answers>
@@ -244,7 +244,7 @@
         <llustration>none</llustration>
       </Illustrations>
     </Question>
-    <Question Question="Sergueï Kariakine est devenu ___ a l'âge de 12 ans.">
+    <Question Question="Serguei Kariakine est devenu ___ a l'age de 12 ans.">
       <Fun_Fact>Grand Maitre d'echecs International.</Fun_Fact>
       <Question_Sound_Clip>Sergei Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Sergei Reponse</Fact_Sound_Clip>

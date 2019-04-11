@@ -12,16 +12,28 @@ public class QuestionsManager : MonoBehaviour
 
     private int m_currentQuestionIndex;
 
-    public  TextMeshProUGUI m_currentAnnouncement;
     public  TextMeshProUGUI m_questionText;
     public  countDown       m_countDownRef;
     private float           m_countdownValue;
-    public  Image           m_image;
+    public  GameObject      m_QuestionScreen;
+    public  GameObject      m_voteScreen;
+    public  GameObject      m_factScreen;
+    public  GameObject           m_illustationLeft;
+    public  GameObject           m_illustationRight;
     public  List<Sprite>    m_illustrations;
     public  List<AudioClip> m_questionAudioClips;
     public  List<AudioClip> m_factAudioClips;
 
     private AudioSource m_audioSource;
+
+    enum QuestionStates
+    {
+        QUESTION,
+        VOTE,
+        FACT
+    };
+
+    private QuestionStates m_state;
 
     private void Start()
     {
@@ -29,9 +41,42 @@ public class QuestionsManager : MonoBehaviour
         LoadQuestions();
         ChooseRandomQuestion();
         m_countdownValue = 30;
-        //m_image.sprite = m_illustrations.Find(sprite => sprite.name == "eddy");
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+            ChooseRandomQuestion();
+
+        UpdateState();
+        Debug.Log(m_currentQuestionIndex);
+    }
+
+    private void UpdateState()
+    {
+        if (m_countdownValue != -1)
+            m_countdownValue = m_countDownRef.currCountdownValue;
+
+        if (m_countdownValue == 0)
+        {
+            switch (m_state)
+            {
+                case QuestionStates.QUESTION:
+                    ShowVote();
+                    m_illustationLeft.GetComponent<Animator>().enabled = true;
+                    m_illustationRight.GetComponent<Animator>().enabled = true;
+                    break;
+                case QuestionStates.VOTE:
+                    StartCoroutine(ShowFact());
+                    m_voteScreen.SetActive(false);
+                    break;
+            }
+
+            m_countdownValue = -1;
+        }
+
+    }
+    
     private void LoadQuestions()
     {
         m_qDb = QuestionDataBase.Load(Path.Combine(Application.dataPath, m_questionDataBasePath));
@@ -54,9 +99,10 @@ public class QuestionsManager : MonoBehaviour
 
     private void DisplayQuestion(Question p_question)
     {
-        m_currentAnnouncement.text = "Question:";
-        m_questionText.text        = p_question.m_question;
-        m_countdownValue           = 30;
+        m_questionText.text           = p_question.m_question;
+        m_countdownValue              = 30;
+        m_countDownRef.countdownValue = 30;
+        m_state                       = QuestionStates.QUESTION;
         PlayQuestionClip();
         LoadIllustrations();
         m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
@@ -73,49 +119,47 @@ public class QuestionsManager : MonoBehaviour
 
     private void LoadIllustrations()
     {
-        m_image.sprite = m_illustrations.Find(sprite => sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
-                                                                .m_illustrations[0]);
-        if (m_image.sprite == null)
-            m_image.sprite = m_illustrations.Find(sprite => sprite.name == "eddy");
+        m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
+                sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
+                        .m_illustrations[0]);
+        m_illustationRight.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
+                sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
+                        .m_illustrations[1]);
+        
+        if (m_illustationLeft.GetComponent<Image>().sprite == null)
+            m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite => sprite.name == "eddy");
+        if (m_illustationRight.GetComponent<Image>().sprite == null)
+            m_illustationRight.GetComponent<Image>().sprite = m_illustrations.Find(sprite => sprite.name == "eddy");
     }
 
-    private void Update()
+
+    void ShowVote()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-            ChooseRandomQuestion();
-
-        if (m_countdownValue != -1)
-            m_countdownValue = m_countDownRef.currCountdownValue;
-
-        if (m_countdownValue == 0)
-        {
-            m_countdownValue = -1;
-            StartCoroutine(ShowAnswer());
-        }
-
-        Debug.Log(m_currentQuestionIndex);
+        m_voteScreen.SetActive(true);
+        m_countDownRef.countdownValue = 30;
+        m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
     }
 
-    IEnumerator ShowVote()
+    IEnumerator ShowFact()
     {
-        yield return new WaitForSeconds(1);
-    }
+        m_state             = QuestionStates.FACT;
+        m_questionText.text = m_qDb.m_questions[m_currentQuestionIndex].m_fact;
 
-    IEnumerator ShowAnswer()
-    {
-        m_currentAnnouncement.text = "Fun Fact:";
-        m_questionText.text        = m_qDb.m_questions[m_currentQuestionIndex].m_fact;
+        m_countDownRef.countdownValue = 5;
+        m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
+
         PlayFactClip();
         yield return new WaitForSeconds(5);
         m_qDb.m_questions.RemoveAt(m_currentQuestionIndex);
         ChooseRandomQuestion();
     }
-    
+
     private void PlayFactClip()
     {
         m_audioSource.clip = m_factAudioClips.Find(audioClips => audioClips.name == m_qDb
-                                                                             .m_questions[m_currentQuestionIndex]
-                                                                             .m_factSoundClipName);
+                                                                         .m_questions[m_currentQuestionIndex]
+                                                                         .m_factSoundClipName);
+        
         if (m_audioSource.clip != null)
             m_audioSource.Play();
     }
