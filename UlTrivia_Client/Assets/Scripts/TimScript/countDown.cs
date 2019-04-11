@@ -5,7 +5,7 @@ using TMPro;
 public class countDown : MonoBehaviour
 {
     TextMeshProUGUI m_text;
-    public float    countdownValue = 30;
+    public float    countdownValue = 10;
     public float    currCountdownValue { get; private set; }
 
     public void Awake()
@@ -23,5 +23,6 @@ public class countDown : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             currCountdownValue--;
         }
+        yield break;
     }
 }

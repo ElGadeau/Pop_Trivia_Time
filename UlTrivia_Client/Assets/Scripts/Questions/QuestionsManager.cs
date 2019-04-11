@@ -41,6 +41,7 @@ public class QuestionsManager : MonoBehaviour
         LoadQuestions();
         ChooseRandomQuestion();
         m_countdownValue = 30;
+        m_state = QuestionStates.QUESTION;
     }
 
     private void Update()
@@ -63,8 +64,7 @@ public class QuestionsManager : MonoBehaviour
             {
                 case QuestionStates.QUESTION:
                     ShowVote();
-                    m_illustationLeft.GetComponent<Animator>().enabled = true;
-                    m_illustationRight.GetComponent<Animator>().enabled = true;
+                    m_QuestionScreen.GetComponent<Animator>().enabled = true;
                     break;
                 case QuestionStates.VOTE:
                     StartCoroutine(ShowFact());
@@ -100,8 +100,7 @@ public class QuestionsManager : MonoBehaviour
     private void DisplayQuestion(Question p_question)
     {
         m_questionText.text           = p_question.m_question;
-        m_countdownValue              = 30;
-        m_countDownRef.countdownValue = 30;
+        m_countDownRef.countdownValue = 10;
         m_state                       = QuestionStates.QUESTION;
         PlayQuestionClip();
         LoadIllustrations();
@@ -136,8 +135,11 @@ public class QuestionsManager : MonoBehaviour
     void ShowVote()
     {
         m_voteScreen.SetActive(true);
+        m_countdownValue = 30;
         m_countDownRef.countdownValue = 30;
-        m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
+        m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());        
+        //m_countDownRef.StopCoroutine(m_countDownRef.StartCountdown());
+
     }
 
     IEnumerator ShowFact()
@@ -148,6 +150,8 @@ public class QuestionsManager : MonoBehaviour
         m_countDownRef.countdownValue = 5;
         m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
 
+        m_factScreen.SetActive(true);
+        
         PlayFactClip();
         yield return new WaitForSeconds(5);
         m_qDb.m_questions.RemoveAt(m_currentQuestionIndex);
