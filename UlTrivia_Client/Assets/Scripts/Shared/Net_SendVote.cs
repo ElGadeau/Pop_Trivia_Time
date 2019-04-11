@@ -7,8 +7,8 @@ public class Net_SendVote : NetMsg
 {
     public Net_SendVote()
     {
-        OP = NetOP.SelectChara;
+        OP = NetOP.SendVote;
     }
     
-    public string Vote { set; get; }
+    public int Vote { set; get; }
 }

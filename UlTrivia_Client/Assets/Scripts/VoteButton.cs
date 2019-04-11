@@ -11,7 +11,7 @@ public class VoteButton : MonoBehaviour
     {
         Net_SendVote sv = new Net_SendVote();
 
-        sv.Vote = m_vote.ToString();
+        sv.Vote = m_vote;
         Client.m_instance.SendServer(sv);
         StartCoroutine(WaitChangeCanvas());
     }
