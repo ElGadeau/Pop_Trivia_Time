@@ -12,9 +12,12 @@ public class TestXML : MonoBehaviour
         QuestionDataBase qb = new QuestionDataBase();
         var testQuestion = new Question
         {
-            m_question = "what is love ?",
-            m_fact     = "baby don't hurt me.",
-            m_answers  = new List<string> {"don't hurt me", "don't hurt me", "no more"}
+            m_question              = "what is love ?",
+            m_fact                  = "baby don't hurt me.",
+            m_answers               = new List<string> {"don't hurt me", "don't hurt me", "no more"},
+            m_illustrations         = new List<string> {"eddy", "malou"},
+            m_questionSoundClipName = "WhatIsLove",
+            m_factSoundClipName     = "Baby don't hurt me"
         };
 
         var q1 = new Question
