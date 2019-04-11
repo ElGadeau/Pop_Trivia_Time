@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class VoteButton : MonoBehaviour
 {
     public int m_vote;
-    [SerializeField] private Canvas m_activeCanvas;
-    [SerializeField] private Canvas m_nextCanvas;
 
     public void SendVote()
     {
