@@ -26,7 +26,7 @@ public class Client : MonoBehaviour
 
     private string m_serverIp;
     
-    public TextMeshProUGUI inputText;
+    public Text inputText;
 
     void Start()
     {
