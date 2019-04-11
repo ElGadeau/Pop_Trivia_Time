@@ -116,7 +116,7 @@ public class Server : MonoBehaviour
 
     private void SendVote(int connectionId, int channelId, int recHostId, Net_SendVote sv)
     {
-        Debug.Log(string.Format("{0}, is the answer of {1}", sv.Vote.ToString(), connectionId));
+        Debug.Log(sv.Vote + " is the answer of " + connectionId);
     }
 #endregion
 
