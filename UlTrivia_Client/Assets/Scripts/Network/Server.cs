@@ -22,7 +22,7 @@ public class Server : MonoBehaviour
     //test to save answers
     public class answers
     {
-        public string answersText;
+        public string answersText = "default";
         public int idUser;
     }
     public static List<answers> m_answerList;
@@ -40,8 +40,15 @@ public class Server : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        m_voteList = new List<vote>(5);
-        m_answerList = new List<answers>(5);
+        
+        m_voteList = new List<vote>();
+        m_answerList = new List<answers>();
+        for (int i = 0; i < 5; i++)
+        {
+            m_voteList.Add(new vote());
+            m_answerList.Add(new answers());
+        }
+        
         Init();
     }
 
