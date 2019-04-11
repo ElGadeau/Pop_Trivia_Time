@@ -2,18 +2,18 @@
 using UnityEngine;
 using TMPro;
 
-public class countDown : MonoBehaviour {
-
-    TextMeshProUGUI text; 
+public class countDown : MonoBehaviour
+{
+    TextMeshProUGUI text;
+    public float    countdownValue = 30;
+    public float    currCountdownValue { get; private set; }
 
     public void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
-        StartCoroutine(StartCountdown());
     }
 
-    float currCountdownValue;
-    public IEnumerator StartCountdown(float countdownValue = 30)
+    public IEnumerator StartCountdown()
     {
         currCountdownValue = countdownValue;
         while (currCountdownValue >= 0)

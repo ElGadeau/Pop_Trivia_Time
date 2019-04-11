@@ -126,6 +126,8 @@ public class Server : MonoBehaviour
 
         Debug.Log(string.Format("Opening connection on port {0} and webport {1}", PORT, WEB_PORT));
         m_isStarted = true;
+        
+        
     }
 
     public void Shutdown()
