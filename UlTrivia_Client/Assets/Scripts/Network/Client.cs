@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -25,7 +26,7 @@ public class Client : MonoBehaviour
 
     private string m_serverIp;
     
-    public Text inputText;
+    public TextMeshProUGUI inputText;
 
     void Start()
     {
