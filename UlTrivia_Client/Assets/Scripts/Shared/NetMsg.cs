@@ -4,6 +4,7 @@
 
     public const int CreateAccount = 1;
     public const int SelectChara = 2;
+    public const int SendText = 3;
 }
 [System.Serializable]
 public abstract class NetMsg

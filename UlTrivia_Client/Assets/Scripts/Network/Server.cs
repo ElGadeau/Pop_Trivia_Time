@@ -87,6 +87,10 @@ public class Server : MonoBehaviour
             case NetOP.SelectChara:
                 SelectCharacter(connectionId, channelId, recHostId, (Net_CharacterSelection) msg);
                 break;
+            
+            case NetOP.SendText:
+                SendText(connectionId, channelId, recHostId, (Net_SendText) msg);
+                break;
         }
     }
 
@@ -99,6 +103,11 @@ public class Server : MonoBehaviour
     {
         Debug.Log(string.Format("{0}, is selected by {1}", cs.Name, connectionId));
         SendClients(cs);
+    }
+
+    private void SendText(int connectionId, int channelId, int recHostId, Net_SendText st)
+    {
+        Debug.Log(string.Format("{0}, is the answer of {1}", st.Text, connectionId));
     }
 #endregion
 
