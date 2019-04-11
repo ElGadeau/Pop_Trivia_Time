@@ -91,6 +91,10 @@ public class Server : MonoBehaviour
             case NetOP.SendText:
                 SendText(connectionId, channelId, recHostId, (Net_SendText) msg);
                 break;
+            
+            case NetOP.SendVote:
+                SendVote(connectionId, channelId, recHostId, (Net_SendVote) msg);
+                break;
         }
     }
 
@@ -108,6 +112,11 @@ public class Server : MonoBehaviour
     private void SendText(int connectionId, int channelId, int recHostId, Net_SendText st)
     {
         Debug.Log(string.Format("{0}, is the answer of {1}", st.Text, connectionId));
+    }
+
+    private void SendVote(int connectionId, int channelId, int recHostId, Net_SendVote sv)
+    {
+        Debug.Log(string.Format("{0}, is the answer of {1}", sv.Vote, connectionId));
     }
 #endregion
 
