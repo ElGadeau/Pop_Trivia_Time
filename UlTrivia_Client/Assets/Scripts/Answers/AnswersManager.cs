@@ -23,12 +23,21 @@ public class AnswersManager : MonoBehaviour
 
     public void Init()
     {
-        m_voteList = new List<int>() {0, 0, 0, 0};
-        if(m_answerList == null)
-        m_answerList = new List<string>()
+        if (m_voteList == null)
+            m_voteList = new List<int>() {0, 0, 0, 0};
+        else
         {
-            m_defaultVote, m_defaultVote, m_defaultVote, m_defaultVote, m_defaultVote
-        };
+            for (int i = 0; i < 4; i++)
+            {
+                m_voteList.Add(0);
+            }
+        }
+        
+        if(m_answerList == null)
+            m_answerList = new List<string>()
+            {
+                m_defaultVote, m_defaultVote, m_defaultVote, m_defaultVote, m_defaultVote
+            };
         else
         {
             m_answerList.Clear();
