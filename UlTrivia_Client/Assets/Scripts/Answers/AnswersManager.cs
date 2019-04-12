@@ -71,7 +71,7 @@ public class AnswersManager : MonoBehaviour
 
         Debug.Log(m_answerTextList.Count - 1);
         
-        for (int i = 0; i < m_answerTextList.Count - 1; i++)
+        for (int i = 0; i < m_answerTextList.Count; i++)
         {
             int index = Random.Range(0, m_answerList.Count);
             if (m_answerTextList[i].text == m_defaultVote)
