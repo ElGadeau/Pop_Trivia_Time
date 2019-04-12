@@ -154,15 +154,4 @@ public class Client : MonoBehaviour
         NetworkTransport.Send(m_hostId, m_connectionId, m_reliableChannel, buffer, BYTE_SIZE, out m_error);
     }
 #endregion
-
-    public void TESTFUNCTIONCREATACCOINT()
-    {
-        Net_CreateAccount ca =new Net_CreateAccount();
-
-        ca.Username = "Yolo";
-        ca.Password = "yes";
-        ca.Email = "yyyy@ggggg.com";
-        
-        SendServer(ca);
-    }
 }

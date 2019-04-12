@@ -747,12 +747,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d95cb34f9a5e94c97b2c08e4cdd6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_isVoting: 0
   m_answerTextList:
   - {fileID: 1580161524}
   - {fileID: 1636709656}
   - {fileID: 1021212846}
   - {fileID: 116832529}
   - {fileID: 123259950}
+  m_qstMng: {fileID: 211161016}
+  m_isSet: 0
 --- !u!4 &134056359
 Transform:
   m_ObjectHideFlags: 0
@@ -863,6 +866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_questionDataBasePath: Scripts/Questions/QuestionsDatabase.xml
+  m_currentQuestionIndex: 0
   m_questionText: {fileID: 1931805483}
   m_factQuestion: {fileID: 1265474846}
   m_factText: {fileID: 123518871}
@@ -1007,6 +1011,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9d7c6be233c220f4da90aab91da30e1d, type: 3}
   - {fileID: 8300000, guid: 4395d8f4c68826a4eab39f60a8212df6, type: 3}
   - {fileID: 8300000, guid: 11e5b2eadb207f74a8139c7682734737, type: 3}
+  m_ansMng: {fileID: 134056358}
 --- !u!4 &211161017
 Transform:
   m_ObjectHideFlags: 0

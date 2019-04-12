@@ -2,8 +2,6 @@
 {
     public const int None = 0;
 
-    public const int CreateAccount = 1;
-    public const int SelectChara = 2;
     public const int SendText = 3;
     public const int SendVote = 4;
 }
