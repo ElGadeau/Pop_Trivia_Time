@@ -26,7 +26,7 @@ public class Client : MonoBehaviour
 
     private string m_serverIp;
     
-    public Text inputText;
+    public InputField inputText;
 
     void Start()
     {
@@ -36,7 +36,10 @@ public class Client : MonoBehaviour
             Destroy(m_instance);
         
         DontDestroyOnLoad(gameObject);
-//        Init();
+
+        string lastIp = PlayerPrefs.GetString("LastIP");
+        Debug.Log(lastIp);
+        inputText.text = lastIp;
     }
 
     private void Update()
@@ -97,6 +100,8 @@ public class Client : MonoBehaviour
             return;
             
         m_serverIp = inputText.text;
+        PlayerPrefs.SetString("LastIP", m_serverIp);
+        PlayerPrefs.Save();
         Init();
     }
     

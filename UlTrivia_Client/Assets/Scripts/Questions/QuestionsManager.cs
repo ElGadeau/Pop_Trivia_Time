@@ -84,8 +84,10 @@ public class QuestionsManager : MonoBehaviour
     private void LoadQuestions()
     {
         m_qDb = QuestionDataBase.Load(Path.Combine(Application.dataPath, m_questionDataBasePath));
+    
     }
 
+    
     private void ChooseRandomQuestion()
     {
         if (m_qDb.m_questions.Count <= 0)
