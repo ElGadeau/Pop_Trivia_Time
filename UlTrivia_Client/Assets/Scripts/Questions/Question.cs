@@ -11,6 +11,6 @@ public class Question
     [XmlArray("Answers")] [XmlArrayItem("Answer")]
     public List<string> m_answers;
 
-    [XmlArray("Illustrations")] [XmlArrayItem("llustration")]
-    public List<string> m_illustrations = new List<string> {"none", "none"};
+    [XmlArray("Illustrations")] [XmlArrayItem("Illustration")]
+    public List<string> m_illustrations;
 }

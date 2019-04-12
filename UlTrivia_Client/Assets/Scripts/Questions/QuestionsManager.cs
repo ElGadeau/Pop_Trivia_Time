@@ -51,7 +51,6 @@ public class QuestionsManager : MonoBehaviour
             ChooseRandomQuestion();
 
         UpdateState();
-        Debug.Log(m_currentQuestionIndex);
     }
 
     private void UpdateState()
@@ -120,9 +119,9 @@ public class QuestionsManager : MonoBehaviour
 
     private void LoadIllustrations()
     {
+        Debug.Log(m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
         m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
                 sprite.name == m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
-        Debug.Log(m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
         m_illustationRight.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
                 sprite.name == m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[1]);
 

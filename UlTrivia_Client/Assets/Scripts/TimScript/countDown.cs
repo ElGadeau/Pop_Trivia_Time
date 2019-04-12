@@ -23,6 +23,5 @@ public class countDown : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             currCountdownValue--;
         }
-        Debug.Log("exiting");
     }
 }
