@@ -11,8 +11,8 @@
         <Answer>420m lmao</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Avion</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce qui separe la Norvege et la Coree du Nord?">
@@ -25,8 +25,8 @@
         <Answer>La Russie</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Norvege_vs_nkorea</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce qu'un Gesamtkunstwerk?">
@@ -40,8 +40,8 @@
         <Answer>Une position sexuelle creee dans un sex dungeon allemand en 1973</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Dictionnaire</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Dans quel but LaMarcus Thompson a-t'il construit les premieres montagnes russes en 1880?">
@@ -56,8 +56,8 @@
         <Answer>rendre les gens malades</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Thompson</Illustration>
+        <Illustration>Montagne Russes</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Comment s'appelle le cris emit par le pingouin?">
@@ -70,8 +70,8 @@
         <Answer>Il Jabote!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Pinguin</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Comment est-ce que l'inventeur Franz Reichtel est-il mort?">
@@ -84,8 +84,8 @@
         <Answer>crime de passion par son amant jaloux de ses groupies.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Franz</Illustration>
+        <Illustration>ampoule</Illustration>
       </Illustrations>
     </Question>
     <Question Question="A Baltimore dans le Maryland, qu'est-il interdit d'ammener au cinema?">
@@ -98,8 +98,8 @@
         <Answer>Un fucking LION.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Camera</Illustration>
+        <Illustration>Popcorn</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Arnold Shwarzenegger a ete paye ___ pour le tournage de Terminator 2.">
@@ -112,8 +112,8 @@
         <Answer>En huile a moteur (2L par 20 mots)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Terminator</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce que la Schoinopentaxophilie?">
@@ -126,8 +126,8 @@
         <Answer>L'attrait envers les cordes de pendus.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Dictionnaire</Illustration>
+        <Illustration>Interrogation</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Quel film a ete interdit de projection par les cinemas americains jusqu'en 2002?">
@@ -140,8 +140,8 @@
         <Answer>Pom Poko (parce que TESTICULES)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Popcorn</Illustration>
+        <Illustration>Camera</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Quel est la duree de vol la plus longue effectuee par un poulet?">
@@ -149,13 +149,13 @@
       <Question_Sound_Clip>Vol Poulet Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Vol Poulet Reponse</Fact_Sound_Clip>
       <Answers>
-        <Answer>2 jours (vol transatlantique, quelle heroine)</Answer>
+        <Answer>2 jours (vol transatlantique, quelle heroïne)</Answer>
         <Answer>genre 15 secondes</Answer>
         <Answer>trois heures</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Poulet</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Combien font 111 111 111 x 111 111 111?">
@@ -168,8 +168,8 @@
         <Answer>Le nombre de noms que Dieu possede dans le roman "Les Noms de Dieu"</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>calcul</Illustration>
+        <Illustration>Interrogation</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Pourquoi est-ce que Kenny de South Park se reincarne avec chacune de ses morts?">
@@ -182,8 +182,8 @@
         <Answer>Pour mieux mourir la prochaine fois et battre son record.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>RIP</Illustration>
+        <Illustration>Interrogation</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Par quoi commencait le mail de felicitation envoye par Adidas a la suite du Marathon de Boston en 2017?">
@@ -196,8 +196,8 @@
         <Answer>"Ok alors on est vraiment desole"</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Mail</Illustration>
+        <Illustration>Interrogation</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qui a fait la demande la conception de la voiture Coccinelle?">
@@ -210,11 +210,11 @@
         <Answer>Quelqu'un qui avait vraiment pas de gout</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>ampoule</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
-    <Question Question="Serguei Kariakine est devenu ___ a l'age de 12 ans.">
+    <Question Question="Sergueï Kariakine est devenu ___ a l'âge de 12 ans.">
       <Fun_Fact>Grand Maitre d'echecs International.</Fun_Fact>
       <Question_Sound_Clip>Sergei Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Sergei Reponse</Fact_Sound_Clip>
@@ -224,8 +224,8 @@
         <Answer>Un HOMME.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>ampoule</Illustration>
+        <Illustration>sergei</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Quel est le nouveau nom de Kanye West?">
@@ -238,8 +238,8 @@
         <Answer>YE!!!!!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>kanye</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Au Philipines, la chaine de restaurants McDonalds sert __ en exclusivite internationale.">
@@ -252,8 +252,8 @@
         <Answer>McSpam Sandwich</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Philipine</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="En 1823, l'allemand Johann Wolfgang Dobereiner a invente le premier ___ commercial.">
@@ -266,8 +266,8 @@
         <Answer>Marriage polyamoureux.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>ampoule</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Quel est le nom de l'oiseau de Twitter?">
@@ -280,8 +280,8 @@
         <Answer>One sweet blue boy</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>twitter</Illustration>
+        <Illustration>Interrogation</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Depuis la deuxieme guerre mondiale, les tanks anglais possedent un dispositif qui permet de ___.">
@@ -294,8 +294,8 @@
         <Answer>Se sentir superieur aux autres nationalites internationales.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Tank_Anglais</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Chargoggagoggmanchauggagoggchaubunagungamaugg?">
@@ -310,8 +310,8 @@
         <Answer>Non merci</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Dictionnaire</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Mike Tyson a deja tente de payer quelqu'un 100 000 dollars pour ___.">
@@ -324,8 +324,8 @@
         <Answer>Refaire sa vie au Mexique et devenir luchador.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Mike</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Combien y a t'il de scenes de sexe dans la trilogie de film Fifty Shades?">
@@ -338,8 +338,8 @@
         <Answer>Juste assez ;)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>-18</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Quel est le nom de l'avion qui a fait Paris New-York du 27 au 29 Septembre 1930?">
@@ -352,8 +352,8 @@
         <Answer>?</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>New York Paris</Illustration>
+        <Illustration>Interrogation</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce que l'Hexakosioihexekontahexaphobie?">
@@ -366,8 +366,8 @@
         <Answer>666 c'est le chiffre de satan et j'en ai horriblement peur</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>calcul</Illustration>
+        <Illustration>Dictionnaire</Illustration>
       </Illustrations>
     </Question>
     <Question Question="En 1991, deux parents suedois ont illegalement appele leur enfant ___.">
@@ -380,8 +380,8 @@
         <Answer>METALLICA JR</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>bebe_alwin</Illustration>
+        <Illustration>suede</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce que la Zythologie?">
@@ -394,8 +394,8 @@
         <Answer>Une science ou tu te bourres.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Dictionnaire</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Les Presidents des etats-Unis George Washington et Thomas Jefferson etaient avide de ___.">
@@ -408,8 +408,8 @@
         <Answer>Combat de joute a cheval.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Thomas_Jefferson</Illustration>
+        <Illustration>Washington</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Durant Halloween a Hollywood, il est interdit d'utiliser ___.">
@@ -422,8 +422,8 @@
         <Answer>du silly string</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>ghost</Illustration>
+        <Illustration>citrouille</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Le Kanbari Nyudo est un esprit japonais aux origines mysterieuses: son domaine est ____.">
@@ -436,8 +436,8 @@
         <Answer>La route qui separe Tokyo et Kyoto</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>esprit</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Carlos Ramirez, alias Whynne sur DeviantArt, est le createur de ___.">
@@ -450,8 +450,8 @@
         <Answer>Le Trollface idfk</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>ampoule</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Matthew Bellamy, le guitariste du band Muse, possede quel record Guiness?">
@@ -466,8 +466,8 @@
         <Answer>Le + de guitares casse en 1 tournee</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Bellamy</Illustration>
+        <Illustration>Muse</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Entre 1942 et 1977, le ranger americain Roy Cleveland Sullivan a ___ sept fois.">
@@ -480,8 +480,8 @@
         <Answer>organise une orgie</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Roy_Sullivan</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Zedd, DJ Russo-Germanique, possede ___ dans sa maison a Los Angeles.">
@@ -494,8 +494,8 @@
         <Answer>Une statue de lui-meme, mais genre, plus muscle.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>maison</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="La petite ile de Niue dans l'ocean pacifique du sud accepte ___ comme forme d'argent legitime.">
@@ -508,8 +508,8 @@
         <Answer>le sang</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>ARGENT</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce que Surstromming?">
@@ -524,8 +524,8 @@
         <Answer>Un massage islandais avec des cactus</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>none</Illustration>
+        <Illustration>Dictionnaire</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Le 30 Juin 2015, un groupe americain a provoque une compagnie japonaise a un duel de ___.">
@@ -538,8 +538,8 @@
         <Answer>duel de robots. DUEL DE ROBOT. DUEL DE ROBOTS!!!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>none</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Apres 39 ans de marriage, on celebre la noce de ___.">
@@ -552,8 +552,8 @@
         <Answer>chair humaine (miam)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>39ans</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Angelina Jolie est une avide collectionneuse de ___.">
@@ -566,8 +566,8 @@
         <Answer>godemichets capables d'oviposition</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Angelina</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="a cause d'allergies, Ringo Starr n'a jamais ___.">
@@ -580,8 +580,8 @@
         <Answer>Dit le mot "fuck".</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Ringo</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
     <Question Question="a cause de leur biologie, les vaches sont incapable de ___.">
@@ -594,11 +594,11 @@
         <Answer>d'empecher la revolution communiste!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Vache</Illustration>
+        <Illustration>none</Illustration>
       </Illustrations>
     </Question>
-    <Question Question="Les habitants de La Gomera, aux Iles du Canarai, utilisent ___ pour communiquer.">
+    <Question Question="Les habitants de La Gomera, aux Iles de Canaries, utilisent ___ pour communiquer.">
       <Fun_Fact>Le Silbo, une langue basée sur les sifflements.</Fun_Fact>
       <Question_Sound_Clip>Silbo Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Silbo Reponse</Fact_Sound_Clip>
@@ -608,8 +608,8 @@
         <Answer>whistling</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>A!</Illustration>
+        <Illustration>B!</Illustration>
       </Illustrations>
     </Question>
     <Question Question="Qui a predit l'existence des Protons?">
@@ -622,8 +622,8 @@
         <Answer>MR PROUT!!!!!!!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <Illustration>Atome</Illustration>
+        <Illustration>ampoule</Illustration>
       </Illustrations>
     </Question>
   </Questions>

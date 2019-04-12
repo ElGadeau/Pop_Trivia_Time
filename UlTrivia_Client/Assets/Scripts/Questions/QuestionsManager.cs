@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class QuestionsManager : MonoBehaviour
 {
     public  string           m_questionDataBasePath;
-    private QuestionDataBase m_qDb = new QuestionDataBase();
+    public QuestionDataBase m_qDb = new QuestionDataBase();
 
-    private int m_currentQuestionIndex;
+    public int m_currentQuestionIndex;
 
     public  TextMeshProUGUI m_questionText;
     public  TextMeshProUGUI m_factQuestion;
@@ -51,7 +51,6 @@ public class QuestionsManager : MonoBehaviour
             ChooseRandomQuestion();
 
         UpdateState();
-        Debug.Log(m_currentQuestionIndex);
     }
 
     private void UpdateState()
@@ -73,6 +72,7 @@ public class QuestionsManager : MonoBehaviour
                     break;
                 case QuestionStates.FACT:
                     ChooseRandomQuestion();
+                    StartCoroutine(ResetIntroAnim());
                     m_factScreen.SetActive(false);
                     break;
             }
@@ -82,7 +82,6 @@ public class QuestionsManager : MonoBehaviour
     private void LoadQuestions()
     {
         m_qDb = QuestionDataBase.Load(Path.Combine(Application.dataPath, m_questionDataBasePath));
-        m_qDb.Save(Path.Combine(Application.dataPath, "questions.xml"));
     }
 
     private void ChooseRandomQuestion()
@@ -120,12 +119,11 @@ public class QuestionsManager : MonoBehaviour
 
     private void LoadIllustrations()
     {
+        Debug.Log(m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
         m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
-                sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
-                        .m_illustrations[0]);
+                sprite.name == m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
         m_illustationRight.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
-                sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
-                        .m_illustrations[1]);
+                sprite.name == m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[1]);
 
         if (m_illustationLeft.GetComponent<Image>().sprite == null)
             m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite => sprite.name == "eddy");
@@ -157,6 +155,13 @@ public class QuestionsManager : MonoBehaviour
         PlayFactClip();
         yield return new WaitForSeconds(5);
         m_qDb.m_questions.RemoveAt(m_currentQuestionIndex);
+    }
+
+    IEnumerator ResetIntroAnim()
+    {
+        m_QuestionScreen.GetComponent<Animator>().Play("Display", -1, 0);
+        yield return new WaitForSeconds(0.01f);
+        m_QuestionScreen.GetComponent<Animator>().enabled = false;
     }
 
     private void PlayFactClip()
