@@ -25,6 +25,9 @@ public class QuestionsManager : MonoBehaviour
     public  List<Sprite>    m_illustrations;
     public  List<AudioClip> m_questionAudioClips;
     public  List<AudioClip> m_factAudioClips;
+    public  List<AudioClip> m_answerTimeAudioClips;
+    public  List<AudioClip> m_voteTimeAudioClips;
+    public  List<AudioClip> m_factTimeAudioClips;
 
     public AnswersManager m_ansMng;
     
@@ -105,7 +108,7 @@ public class QuestionsManager : MonoBehaviour
     private void DisplayQuestion(Question p_question)
     {
         m_questionText.text           = p_question.m_question;
-        m_countDownRef.countdownValue = 10;
+        m_countDownRef.countdownValue = 30;
         m_state                       = QuestionStates.QUESTION;
         PlayQuestionClip();
         LoadIllustrations();
@@ -138,11 +141,13 @@ public class QuestionsManager : MonoBehaviour
 
     void ShowVote()
     {
+        
+        
         m_ansMng.m_isVoting = true;
         m_state = QuestionStates.VOTE;
         m_voteScreen.SetActive(true);
-        m_countdownValue              = 10;
-        m_countDownRef.countdownValue = 10;
+        m_countdownValue              = 25;
+        m_countDownRef.countdownValue = 25;
         m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
     }
 
@@ -154,13 +159,13 @@ public class QuestionsManager : MonoBehaviour
         m_factQuestion.text = m_questionText.text;
         m_factText.text     = m_qDb.m_questions[m_currentQuestionIndex].m_fact;
 
-        m_countDownRef.countdownValue = 5;
+        m_countDownRef.countdownValue = 10;
         m_countDownRef.StartCoroutine(m_countDownRef.StartCountdown());
 
         m_factScreen.SetActive(true);
 
         PlayFactClip();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         m_qDb.m_questions.RemoveAt(m_currentQuestionIndex);
     }
 
