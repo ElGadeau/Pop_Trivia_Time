@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class QuestionsManager : MonoBehaviour
 {
-    public  string           m_questionDataBasePath;
+    public string           m_questionDataBasePath;
     public QuestionDataBase m_qDb = new QuestionDataBase();
 
     public int m_currentQuestionIndex;
@@ -29,9 +29,11 @@ public class QuestionsManager : MonoBehaviour
     public  List<AudioClip> m_voteTimeAudioClips;
     public  List<AudioClip> m_factTimeAudioClips;
 
+    public AudioClip      m_music;
     public AnswersManager m_ansMng;
-    
-    private AudioSource m_audioSource;
+
+    public AudioSource m_audioSource1;
+    public AudioSource m_audioSource2;
 
     enum QuestionStates
     {
@@ -44,7 +46,8 @@ public class QuestionsManager : MonoBehaviour
 
     private void Start()
     {
-        m_audioSource = GetComponent<AudioSource>();
+        m_audioSource1 = GetComponent<AudioSource>();
+        m_audioSource2.clip = m_music;
         LoadQuestions();
         ChooseRandomQuestion();
         m_countdownValue = 30;
@@ -87,10 +90,9 @@ public class QuestionsManager : MonoBehaviour
     private void LoadQuestions()
     {
         m_qDb = QuestionDataBase.Load(Path.Combine(Application.dataPath, m_questionDataBasePath));
-    
     }
 
-    
+
     private void ChooseRandomQuestion()
     {
         if (m_qDb.m_questions.Count <= 0)
@@ -117,11 +119,13 @@ public class QuestionsManager : MonoBehaviour
 
     private void PlayQuestionClip()
     {
-        m_audioSource.clip = m_questionAudioClips.Find(audioClips => audioClips.name == m_qDb
+        m_audioSource1.clip = m_questionAudioClips.Find(audioClips => audioClips.name == m_qDb
                                                                              .m_questions[m_currentQuestionIndex]
                                                                              .m_questionSoundClipName);
-        if (m_audioSource.clip != null)
-            m_audioSource.Play();
+        if (m_audioSource1.clip != null)
+            m_audioSource1.Play();
+
+        m_audioSource2.Play();
     }
 
     private void LoadIllustrations()
@@ -141,10 +145,10 @@ public class QuestionsManager : MonoBehaviour
 
     void ShowVote()
     {
-        
+        m_audioSource2.Stop();
         
         m_ansMng.m_isVoting = true;
-        m_state = QuestionStates.VOTE;
+        m_state             = QuestionStates.VOTE;
         m_voteScreen.SetActive(true);
         m_countdownValue              = 25;
         m_countDownRef.countdownValue = 25;
@@ -178,11 +182,11 @@ public class QuestionsManager : MonoBehaviour
 
     private void PlayFactClip()
     {
-        m_audioSource.clip = m_factAudioClips.Find(audioClips => audioClips.name == m_qDb
+        m_audioSource1.clip = m_factAudioClips.Find(audioClips => audioClips.name == m_qDb
                                                                          .m_questions[m_currentQuestionIndex]
                                                                          .m_factSoundClipName);
 
-        if (m_audioSource.clip != null)
-            m_audioSource.Play();
+        if (m_audioSource1.clip != null)
+            m_audioSource1.Play();
     }
 }

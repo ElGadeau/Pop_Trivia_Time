@@ -12,7 +12,7 @@ public class Server : MonoBehaviour
     private const int BYTE_SIZE = 1024;
 
     private byte m_reliableChannel;
-    private int channelId; // Which lane was it sent from
+    private int  channelId; // Which lane was it sent from
     private byte m_error;
 
     private int m_hostId;
@@ -23,7 +23,7 @@ public class Server : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        
+
         Init();
     }
 
@@ -82,11 +82,11 @@ public class Server : MonoBehaviour
             case NetOP.None:
                 Debug.Log("Unhandled NetOP request");
                 break;
-            
+
             case NetOP.SendText:
                 SendText(connectionId, channelId, recHostId, (Net_SendText) msg);
                 break;
-            
+
             case NetOP.SendVote:
                 SendVote(connectionId, channelId, recHostId, (Net_SendVote) msg);
                 break;
@@ -96,7 +96,7 @@ public class Server : MonoBehaviour
     private void SendText(int connectionId, int channelId, int recHostId, Net_SendText st)
     {
         AnswersManager.m_answerList[connectionId] = st.Text;
-        Debug.Log(string.Format("{0}, is the answer of {1}",st.Text, connectionId));
+        Debug.Log(string.Format("{0}, is the answer of {1}", st.Text, connectionId));
     }
 
     private void SendVote(int connectionId, int channelId, int recHostId, Net_SendVote sv)
@@ -116,12 +116,10 @@ public class Server : MonoBehaviour
         HostTopology topo = new HostTopology(cc, MAX_USER);
 
         // Server only code
-        m_hostId    = NetworkTransport.AddHost(topo, PORT, null);
+        m_hostId = NetworkTransport.AddHost(topo, PORT, null);
 
         Debug.Log(string.Format("Opening connection on port {0} and webport {1}", PORT, WEB_PORT));
         m_isStarted = true;
-        
-        
     }
 
     public void Shutdown()
@@ -151,7 +149,7 @@ public class Server : MonoBehaviour
         BinaryFormatter formatter = new BinaryFormatter();
         MemoryStream    ms        = new MemoryStream(buffer);
         formatter.Serialize(ms, msg);
-        
+
         NetworkTransport.StartSendMulticast(m_hostId, channelId, buffer, BYTE_SIZE, out m_error);
     }
 #endregion
