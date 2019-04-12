@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class QuestionsManager : MonoBehaviour
 {
     public  string           m_questionDataBasePath;
-    private QuestionDataBase m_qDb = new QuestionDataBase();
+    public QuestionDataBase m_qDb = new QuestionDataBase();
 
-    private int m_currentQuestionIndex;
+    public int m_currentQuestionIndex;
 
     public  TextMeshProUGUI m_questionText;
     public  TextMeshProUGUI m_factQuestion;
