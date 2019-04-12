@@ -82,14 +82,6 @@ public class Server : MonoBehaviour
             case NetOP.None:
                 Debug.Log("Unhandled NetOP request");
                 break;
-
-            case NetOP.CreateAccount:
-                CreateAccount(connectionId, channelId, recHostId, (Net_CreateAccount) msg);
-                break;
-
-            case NetOP.SelectChara:
-                SelectCharacter(connectionId, channelId, recHostId, (Net_CharacterSelection) msg);
-                break;
             
             case NetOP.SendText:
                 SendText(connectionId, channelId, recHostId, (Net_SendText) msg);
@@ -101,20 +93,10 @@ public class Server : MonoBehaviour
         }
     }
 
-    private void CreateAccount(int connectionId, int channelId, int recHostId, Net_CreateAccount ca)
-    {
-        Debug.Log(string.Format("{0},{1}, {2}", ca.Username, ca.Password, ca.Email));
-    }
-
-    private void SelectCharacter(int connectionId, int channelId, int recHostId, Net_CharacterSelection cs)
-    {
-        Debug.Log(string.Format("{0}, is selected by {1}", cs.Name, connectionId));
-        SendClients(cs);
-    }
-
     private void SendText(int connectionId, int channelId, int recHostId, Net_SendText st)
     {
         AnswersManager.m_answerList[connectionId] = st.Text;
+        Debug.Log(string.Format("{0}, is the answer of {1}",st.Text, connectionId));
     }
 
     private void SendVote(int connectionId, int channelId, int recHostId, Net_SendVote sv)

@@ -26,6 +26,8 @@ public class QuestionsManager : MonoBehaviour
     public  List<AudioClip> m_questionAudioClips;
     public  List<AudioClip> m_factAudioClips;
 
+    public AnswersManager m_ansMng;
+    
     private AudioSource m_audioSource;
 
     enum QuestionStates
@@ -134,6 +136,7 @@ public class QuestionsManager : MonoBehaviour
 
     void ShowVote()
     {
+        m_ansMng.m_isVoting = true;
         m_state = QuestionStates.VOTE;
         m_voteScreen.SetActive(true);
         m_countdownValue              = 10;
@@ -143,6 +146,8 @@ public class QuestionsManager : MonoBehaviour
 
     IEnumerator ShowFact()
     {
+        m_ansMng.m_isVoting = false;
+        m_ansMng.Init();
         m_state             = QuestionStates.FACT;
         m_factQuestion.text = m_questionText.text;
         m_factText.text     = m_qDb.m_questions[m_currentQuestionIndex].m_fact;
