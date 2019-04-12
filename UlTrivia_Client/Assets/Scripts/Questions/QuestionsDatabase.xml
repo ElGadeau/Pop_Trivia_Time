@@ -11,7 +11,7 @@
         <Answer>420m lmao</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Avion</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -25,7 +25,7 @@
         <Answer>La Russie</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Norvege_vs_nkorea</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -40,7 +40,7 @@
         <Answer>Une position sexuelle creee dans un sex dungeon allemand en 1973</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Dictionnaire</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -56,8 +56,8 @@
         <Answer>rendre les gens malades</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Thompson</llustration>
+        <llustration>Montagne Russes</llustration>
       </Illustrations>
     </Question>
     <Question Question="Comment s'appelle le cris emit par le pingouin?">
@@ -70,7 +70,7 @@
         <Answer>Il Jabote!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Pinguin</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -84,8 +84,8 @@
         <Answer>crime de passion par son amant jaloux de ses groupies.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Franz</llustration>
+        <llustration>ampoule</llustration>
       </Illustrations>
     </Question>
     <Question Question="A Baltimore dans le Maryland, qu'est-il interdit d'ammener au cinema?">
@@ -98,8 +98,8 @@
         <Answer>Un fucking LION.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Camera</llustration>
+        <llustration>Popcorn</llustration>
       </Illustrations>
     </Question>
     <Question Question="Arnold Shwarzenegger a ete paye ___ pour le tournage de Terminator 2.">
@@ -112,7 +112,7 @@
         <Answer>En huile a moteur (2L par 20 mots)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Terminator</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -126,8 +126,8 @@
         <Answer>L'attrait envers les cordes de pendus.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Dictionnaire</llustration>
+        <llustration>Interrogation</llustration>
       </Illustrations>
     </Question>
     <Question Question="Quel film a ete interdit de projection par les cinemas americains jusqu'en 2002?">
@@ -140,8 +140,8 @@
         <Answer>Pom Poko (parce que TESTICULES)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Popcorn</llustration>
+        <llustration>Camera</llustration>
       </Illustrations>
     </Question>
     <Question Question="Quel est la duree de vol la plus longue effectuee par un poulet?">
@@ -149,12 +149,12 @@
       <Question_Sound_Clip>Vol Poulet Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Vol Poulet Reponse</Fact_Sound_Clip>
       <Answers>
-        <Answer>2 jours (vol transatlantique, quelle heroine)</Answer>
+        <Answer>2 jours (vol transatlantique, quelle heroïne)</Answer>
         <Answer>genre 15 secondes</Answer>
         <Answer>trois heures</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Poulet</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -168,8 +168,8 @@
         <Answer>Le nombre de noms que Dieu possede dans le roman "Les Noms de Dieu"</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>calcul</llustration>
+        <llustration>Interrogation</llustration>
       </Illustrations>
     </Question>
     <Question Question="Pourquoi est-ce que Kenny de South Park se reincarne avec chacune de ses morts?">
@@ -182,8 +182,8 @@
         <Answer>Pour mieux mourir la prochaine fois et battre son record.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>RIP</llustration>
+        <llustration>Interrogation</llustration>
       </Illustrations>
     </Question>
     <Question Question="Par quoi commencait le mail de felicitation envoye par Adidas a la suite du Marathon de Boston en 2017?">
@@ -196,8 +196,8 @@
         <Answer>"Ok alors on est vraiment desole"</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Mail</llustration>
+        <llustration>Interrogation</llustration>
       </Illustrations>
     </Question>
     <Question Question="Qui a fait la demande la conception de la voiture Coccinelle?">
@@ -210,11 +210,11 @@
         <Answer>Quelqu'un qui avait vraiment pas de gout</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>ampoule</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
-    <Question Question="Serguei Kariakine est devenu ___ a l'age de 12 ans.">
+    <Question Question="Sergueï Kariakine est devenu ___ a l'âge de 12 ans.">
       <Fun_Fact>Grand Maitre d'echecs International.</Fun_Fact>
       <Question_Sound_Clip>Sergei Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Sergei Reponse</Fact_Sound_Clip>
@@ -224,8 +224,8 @@
         <Answer>Un HOMME.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>ampoule</llustration>
+        <llustration>sergei</llustration>
       </Illustrations>
     </Question>
     <Question Question="Quel est le nouveau nom de Kanye West?">
@@ -238,7 +238,7 @@
         <Answer>YE!!!!!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>kanye</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -252,7 +252,7 @@
         <Answer>McSpam Sandwich</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Philipine</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -266,7 +266,7 @@
         <Answer>Marriage polyamoureux.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>ampoule</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -280,8 +280,8 @@
         <Answer>One sweet blue boy</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>twitter</llustration>
+        <llustration>Interrogation</llustration>
       </Illustrations>
     </Question>
     <Question Question="Depuis la deuxieme guerre mondiale, les tanks anglais possedent un dispositif qui permet de ___.">
@@ -294,7 +294,7 @@
         <Answer>Se sentir superieur aux autres nationalites internationales.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Tank_Anglais</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -310,7 +310,7 @@
         <Answer>Non merci</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Dictionnaire</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -324,7 +324,7 @@
         <Answer>Refaire sa vie au Mexique et devenir luchador.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Mike</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -338,7 +338,7 @@
         <Answer>Juste assez ;)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>-18</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -352,8 +352,8 @@
         <Answer>?</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>New York Paris</llustration>
+        <llustration>Interrogation</llustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce que l'Hexakosioihexekontahexaphobie?">
@@ -366,8 +366,8 @@
         <Answer>666 c'est le chiffre de satan et j'en ai horriblement peur</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>calcul</llustration>
+        <llustration>Dictionnaire</llustration>
       </Illustrations>
     </Question>
     <Question Question="En 1991, deux parents suedois ont illegalement appele leur enfant ___.">
@@ -380,8 +380,8 @@
         <Answer>METALLICA JR</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>bebe_alwin</llustration>
+        <llustration>suede</llustration>
       </Illustrations>
     </Question>
     <Question Question="Qu'est-ce que la Zythologie?">
@@ -394,7 +394,7 @@
         <Answer>Une science ou tu te bourres.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Dictionnaire</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -408,8 +408,8 @@
         <Answer>Combat de joute a cheval.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Thomas_Jefferson</llustration>
+        <llustration>Washington</llustration>
       </Illustrations>
     </Question>
     <Question Question="Durant Halloween a Hollywood, il est interdit d'utiliser ___.">
@@ -422,8 +422,8 @@
         <Answer>du silly string</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>ghost</llustration>
+        <llustration>citrouille</llustration>
       </Illustrations>
     </Question>
     <Question Question="Le Kanbari Nyudo est un esprit japonais aux origines mysterieuses: son domaine est ____.">
@@ -436,7 +436,7 @@
         <Answer>La route qui separe Tokyo et Kyoto</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>esprit</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -450,7 +450,7 @@
         <Answer>Le Trollface idfk</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>ampoule</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -466,8 +466,8 @@
         <Answer>Le + de guitares casse en 1 tournee</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Bellamy</llustration>
+        <llustration>Muse</llustration>
       </Illustrations>
     </Question>
     <Question Question="Entre 1942 et 1977, le ranger americain Roy Cleveland Sullivan a ___ sept fois.">
@@ -480,7 +480,7 @@
         <Answer>organise une orgie</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Roy_Sullivan</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -494,7 +494,7 @@
         <Answer>Une statue de lui-meme, mais genre, plus muscle.</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>maison</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -508,7 +508,7 @@
         <Answer>le sang</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>ARGENT</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -525,7 +525,7 @@
       </Answers>
       <Illustrations>
         <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Dictionnaire</llustration>
       </Illustrations>
     </Question>
     <Question Question="Le 30 Juin 2015, un groupe americain a provoque une compagnie japonaise a un duel de ___.">
@@ -552,7 +552,7 @@
         <Answer>chair humaine (miam)</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>39ans</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -566,7 +566,7 @@
         <Answer>godemichets capables d'oviposition</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Angelina</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -580,7 +580,7 @@
         <Answer>Dit le mot "fuck".</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Ringo</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
@@ -594,11 +594,11 @@
         <Answer>d'empecher la revolution communiste!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
+        <llustration>Vache</llustration>
         <llustration>none</llustration>
       </Illustrations>
     </Question>
-    <Question Question="Les habitants de La Gomera, aux Iles du Canarai, utilisent ___ pour communiquer.">
+    <Question Question="Les habitants de La Gomera, aux Iles de Canaries, utilisent ___ pour communiquer.">
       <Fun_Fact>Le Silbo, une langue basée sur les sifflements.</Fun_Fact>
       <Question_Sound_Clip>Silbo Question</Question_Sound_Clip>
       <Fact_Sound_Clip>Silbo Reponse</Fact_Sound_Clip>
@@ -608,8 +608,8 @@
         <Answer>whistling</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>A!</llustration>
+        <llustration>B!</llustration>
       </Illustrations>
     </Question>
     <Question Question="Qui a predit l'existence des Protons?">
@@ -622,8 +622,8 @@
         <Answer>MR PROUT!!!!!!!</Answer>
       </Answers>
       <Illustrations>
-        <llustration>none</llustration>
-        <llustration>none</llustration>
+        <llustration>Atome</llustration>
+        <llustration>ampoule</llustration>
       </Illustrations>
     </Question>
   </Questions>
