@@ -24,10 +24,19 @@ public class AnswersManager : MonoBehaviour
     public void Init()
     {
         m_voteList = new List<int>() {0, 0, 0, 0};
+        if(m_answerList == null)
         m_answerList = new List<string>()
         {
             m_defaultVote, m_defaultVote, m_defaultVote, m_defaultVote, m_defaultVote
         };
+        else
+        {
+            m_answerList.Clear();
+            for (int i = 0; i < 5; i++)
+            {
+                m_answerList.Add(m_defaultVote);
+            }
+        }
         for (int i = 0; i < m_answerTextList.Count; i++)
         {
             m_answerTextList[i].text = m_answerList[i];
