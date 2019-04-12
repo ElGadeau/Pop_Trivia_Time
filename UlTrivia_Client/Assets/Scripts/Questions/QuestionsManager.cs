@@ -73,6 +73,7 @@ public class QuestionsManager : MonoBehaviour
                     break;
                 case QuestionStates.FACT:
                     ChooseRandomQuestion();
+                    StartCoroutine(ResetIntroAnim());
                     m_factScreen.SetActive(false);
                     break;
             }
@@ -120,11 +121,10 @@ public class QuestionsManager : MonoBehaviour
     private void LoadIllustrations()
     {
         m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
-                sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
-                        .m_illustrations[0]);
+                sprite.name == m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
+        Debug.Log(m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[0]);
         m_illustationRight.GetComponent<Image>().sprite = m_illustrations.Find(sprite =>
-                sprite.name == m_qDb.m_questions[m_currentQuestionIndex]
-                        .m_illustrations[1]);
+                sprite.name == m_qDb.m_questions[m_currentQuestionIndex].m_illustrations[1]);
 
         if (m_illustationLeft.GetComponent<Image>().sprite == null)
             m_illustationLeft.GetComponent<Image>().sprite = m_illustrations.Find(sprite => sprite.name == "eddy");
@@ -156,6 +156,13 @@ public class QuestionsManager : MonoBehaviour
         PlayFactClip();
         yield return new WaitForSeconds(5);
         m_qDb.m_questions.RemoveAt(m_currentQuestionIndex);
+    }
+
+    IEnumerator ResetIntroAnim()
+    {
+        m_QuestionScreen.GetComponent<Animator>().Play("Display", -1, 0);
+        yield return new WaitForSeconds(0.01f);
+        m_QuestionScreen.GetComponent<Animator>().enabled = false;
     }
 
     private void PlayFactClip()
